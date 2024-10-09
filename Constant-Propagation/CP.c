@@ -15,6 +15,7 @@
 //     PROGRAM :
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 void input();
@@ -103,7 +104,7 @@ void change(int p, char *res)
     {
         if (strcmp(arr[p].res, arr[i].op1) == 0)
             strcpy(arr[i].op1, res);
-        else if (strcmp(arr[p].res, arr[i].op2) == 0)
+        if (strcmp(arr[p].res, arr[i].op2) == 0)
             strcpy(arr[i].op2, res);
     }
 }
